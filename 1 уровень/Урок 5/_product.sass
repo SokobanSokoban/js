@@ -1,0 +1,195 @@
+.dilivery-flex-prod
+  background-color: #222224
+  width: 1400px
+  height: 341px
+  display: flex
+  justify-content: space-around
+
+.b-diliv-lefr
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 309px
+  height: 320px
+  //border: 1px solid white
+  &__img
+    background-color: $col_pink
+    margin-bottom: 50px
+    margin-top: 10px
+
+.divil-head
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  //скрываемое меню
+.cat-hid-menu
+  display: block
+  width: 243px
+  height: 37px
+  border-left: 5px solid $col_pink
+  padding-left: 30px
+  text-transform: uppercase
+  font-family: Lato
+  color: $col_pink
+  font-size: 14px
+  font-weight: 700
+  line-height: 37px
+  text-align: left
+
+
+.cat-hid-menu::-webkit-details-marker
+  display: none
+  font-size: 10px
+  padding-left: 0.5em
+
+
+.cat-hid-menu::after
+  content: '\25B6'
+  padding-left: 0.5em
+  color: $col_pink
+.m-padding-left
+  padding-left: 40px
+
+.details-menu[open] > summary::after
+  content: '\25BC'
+  color: $col_pink
+
+.flex
+  display: flex
+
+.Trending-now
+  @if $debug == 1
+    border: 1px solid black
+  width: 280px
+  height: 100px
+  &__menu
+    display: flex
+    flex-wrap: wrap
+    font-family: Lato
+    font-size: 14px
+    line-height: 26px
+    font-weight: 400
+  &__h3
+    margin-bottom: 20px
+    Text: Trending now
+    font-family: Lato
+    font-size: 14px
+    line-height: 20px
+    font-weight: 700
+    text-transform: uppercase
+    color: #6f6e6e
+
+.text_none
+  text-decoration: none
+  list-style: none
+  margin-right: 30px
+
+.flex-right
+  @if $debug == 1
+    border: 1px solid black
+  display: flex
+  flex-direction: column
+  //height: 100px
+.b-flex-center
+  display: flex
+  margin: 0px auto
+  justify-content: center
+.check_li
+  //display: none
+.line-pro
+  width: 846px
+  height: 50px
+  background-color: #ccc
+  @if $debug == 1
+    border: 1px solid black
+
+.Trending-now-flex
+  display: flex
+.container-prod
+  width: 850px
+  margin: 0 auto
+
+
+.float
+  float: left
+.box-product-float
+  padding-top: 60px
+  display: flex
+  flex-wrap: wrap
+
+.box-product-float
+  .item:nth-child(3n+2)
+    margin-left: 30px
+    margin-right: 30px
+.space-between
+  justify-content: space-between
+.padding
+  padding: 15px
+.select
+  margin-left: 20px
+.w-text
+  background-color: white
+
+.roundet
+  border-radius: 3px
+  border-style: solid
+  border-width: 1px
+  border-color: #a3a3a3
+  box-sizing: border-box
+  background-color: #ffffff
+  width: 320px
+
+.button-foot
+  @if $debug == 1
+    border: 1px solid black
+.but-viewall
+  font-family: Lato
+  color: #ef5b70
+  font-size: 16px
+  font-weight: 300
+  line-height: 26px
+  text-align: left
+  border-radius: 3px
+  border-style: solid
+  border-width: 1px
+  border-color: #ef5b70
+  box-sizing: border-box
+  background-color: #ffffff
+  height: 44px
+  width: 150px
+  padding-left: 35px
+  @if $debug == 1
+    border: 1px solid black
+.round-li
+  font-family: Lato
+  color: #ef5b70
+  font-size: 16px
+  font-weight: 300
+  line-height: 26px
+  text-align: left
+  font-family: Lato
+  color: #c4c4c4
+  font-size: 16px
+  font-weight: 300
+  line-height: 26px
+  text-align: left
+  @if $debug == 1
+    border: 1px solid black
+.round-li:hover
+  display: block
+  font-family: FontAwesome
+  color:  #ef5b70
+  font-size: 20px
+  font-weight: 400
+  line-height: 26px
+  text-align: left
+.al-center
+  height: 44px
+  align-items: center
+.but-viewall:hover
+  transition: background-color color 0.5s
+  color: white
+  background-color: $col_pink
+
