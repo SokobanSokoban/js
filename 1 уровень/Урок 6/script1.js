@@ -55,24 +55,8 @@ function addToCart(e) {
     $cart.text = 'корзина на ' + '$' + summ;
 }
 
-// Выбираем все кнопки на странице и получаем массив
-var btns = document.querySelectorAll('.js-add-product')
-// Проходим по массиву
-btns.forEach(function (btn) {
-    // Вешаем событие клик
-    btn.addEventListener('click', addToCart)
-})
 
-
-//var $products = document.querySelector('.products');
-//var $products__item = document.querySelector('.products__item');
-//var $products__item_clon = $products__item.cloneNode(true);
-//
-//$products__item_clon.id = '1221';
-//$products.appendChild($products__item_clon);
-addBlock('1111');
-addBlock('2222');
-
+ 
 function addBlock(id) {
     var $products = document.querySelector('.products');
     var $products__item = document.querySelector('.products__item');
@@ -81,3 +65,14 @@ function addBlock(id) {
     $products__item_clon.id = id;
     $products.appendChild($products__item_clon);
 }
+
+addBlock('1111');
+addBlock('2222');
+
+// Выбираем все кнопки на странице и получаем массив
+var btns = document.querySelectorAll('.js-add-product')
+// Проходим по массиву
+btns.forEach(function (btn) {
+    // Вешаем событие клик
+    btn.addEventListener('click', addToCart)
+})
