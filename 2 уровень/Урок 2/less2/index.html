@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOM</title>
+    <meta charset="utf-8" />
+    <style>
+        .original {
+            min-height: 400px;
+            background-color: aquamarine;
+        }
+
+        .original>img {
+            width: 500px;
+        }
+
+        .thumbnails {
+            display: flex;
+        }
+
+        .thumbnails>li {
+            list-style-type: none;
+        }
+
+        .thumbnails>li a {
+            display: block;
+        }
+
+        .thumbnails>li img {
+            width: 100px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="original" id="original"></div>
+    <ul class="thumbnails" id="thumbnails"></ul>
+    <script src="gallery.js"></script>
+</body>
+
+</html>
