@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var text = "'aren't ' aren't  'aren't '."
+        var result = text.replace(/'/g, function(item, i) {
+            if (/\w/.test(text[i - 1]) && /\w/.test(text[i + 1])) {
+                return "'"
+            } else {
+                return '"'
+            }
+        });
+        console.log(result);
+
+    </script>
+</body>
